@@ -16,13 +16,17 @@ export default function Home() {
                     <h1 className={"text-title font-bold text-5xl " + montserrat.className}>Lucas MARTINELLE</h1>
                     <h4 className={"text-title text-3xl mb-5 " + montserrat.className}>Développeur web</h4>
                     <p className={"text-white"}>Je design et développe des sites webs<br />
-                    N'hésitez pas à jeter un coup d'oeil à mes créations !</p>
+                    N&apos;hésitez pas à jeter un coup d&apos;oeil à mes créations !</p>
                     <button className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</button>
                 </div>
             </section>
             <section id={"about-me"} className={"p-5 pt-16 pb-16"}>
                 <div className={"md:w-2/4 m-auto md:flex md:items-center md:gap-3 rounded-xl drop-shadow-lg p-5 bg-block"}>
-                    <img src={"/me.jpg"} alt={"Photo de moi"}  className={"m-auto rounded-full h-36 w-44 object-cover md:h-48 md:w-36 lg:h-52 lg:w-44 drop-shadow-lg"} />
+                    <img
+                        src={"/me.jpg"}
+                        alt={"Photo de moi"}
+                        className={"m-auto rounded-full h-36 w-44 object-cover md:h-48 md:w-36 lg:h-52 lg:w-44 drop-shadow-lg"}
+                    />
                     <div className={"text-center md:text-left md:border-l-4 md:border-primary p-3"}>
                         <h4 className={"text-title mb-3 text-2xl font-bold " + montserrat.className}>Qui suis-je ?</h4>
                         <hr className={"md:hidden bg-primary h-1 rounded mb-3"} />
@@ -51,7 +55,7 @@ export default function Home() {
                 <div className={"w-100 mt-5 md:mt-0 h-max bg-background rounded-xl shadow-lg p-4"}>
                     <div className={"border-l-4 border-primary px-5"}>
                         <h4 className={"text-title font-bold text-2xl " + montserrat.className}>Parcours scolaire</h4>
-                        <h6 className={"text-title font-bold text-lg"}>Lycée Bertrand D'argentré, Vitré 35500, filière générale<br />
+                        <h6 className={"text-title font-bold text-lg"}>Lycée Bertrand D&apos;argentré, Vitré 35500, filière générale<br />
                             2019 - 2021</h6>
                         <ul className={"text-white list-disc ps-5"}>
                             <li>Mathématique</li>
@@ -61,10 +65,10 @@ export default function Home() {
                         <h6 className={"text-title font-bold text-lg"}>IUT De Laval, LAVAL 53000, département informatique<br />
                             2021 - En cours</h6>
                         <ul className={"text-white list-disc ps-5"}>
-                            <li>Réaliser un développement d'application</li>
+                            <li>Réaliser un développement d&apos;application</li>
                             <li>Optimiser des applications informatiques</li>
                             <li>Administrer des systèmes informatiques communicants complexes</li>
-                            <li>Gérer des données de l'information</li>
+                            <li>Gérer des données de l&apos;information</li>
                             <li>Conduire un projet</li>
                             <li>Travailler dans une équipe informatique</li>
                         </ul>
