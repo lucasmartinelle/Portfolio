@@ -91,7 +91,7 @@ export default function Home() {
                                 <h6 className={"text-lg text-title font-bold mb-3"}>FetcherREP</h6>
                                 <p className={"text-white mb-3"}>Fetcher est une plateforme pour récupérer, enregistrer et afficher les rapports provenant de la plateforme Hackerone.
                                     Ce projet a été développé avec Bootstrap, Next.js et Prisma </p>
-                                <button className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</button>
+                                <a href={"https://github.com/lucasmartinelle/fetcherRep"} className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</a>
                             </div>
                         </div>
                         <div className={"card w-72 bg-background rounded-xl h-max mt-3 border-background border-2"}>
@@ -101,7 +101,7 @@ export default function Home() {
                             <div className={"project-body text-center py-5 px-2"}>
                                 <h6 className={"text-lg text-title font-bold mb-3"}>Portfolio</h6>
                                 <p className={"text-white mb-3"}>Vous êtes actuellement dessus ! Projet développé à l’aide de TailWind CSS et Next.js</p>
-                                <button className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</button>
+                                <a href={"https://github.com/lucasmartinelle/Portfolio"} className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</a>
                             </div>
                         </div>
                     </div>
