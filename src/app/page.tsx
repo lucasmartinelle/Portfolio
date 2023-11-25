@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Contact from '@/components/Contact'
 import {Montserrat} from 'next/font/google'
 
 const montserrat = Montserrat({subsets: ['latin']});
@@ -95,7 +96,7 @@ export default function Home() {
                             </div>
                             <div className={"project-body text-center py-5 px-2"}>
                                 <h6 className={"text-lg text-title font-bold mb-3"}>Portfolio</h6>
-                                <p className={"text-white mb-3"}>Vous êtes actuellement dessus ! Projet développé à l’aide de TailWind CSS, Next.js et Prisma</p>
+                                <p className={"text-white mb-3"}>Vous êtes actuellement dessus ! Projet développé à l’aide de TailWind CSS et Next.js</p>
                                 <button className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</button>
                             </div>
                         </div>
@@ -108,35 +109,7 @@ export default function Home() {
                     <p className={"text-white mb-3"}>
                         Vous souhaitez m’envoyer un message, me faire une suggestion ou m’alerter d’un problème, vous pouvez le faire ci-dessous !
                     </p>
-                    <form className={"text-center"}>
-                        <div className={"md:flex md:justify-between md:items-center md:gap-3"}>
-                            <input
-                                type={"text"}
-                                className={"w-full bg-transparent border-2 rounded-xl px-3 py-1 text-white placeholder:text-white placeholder:text-opacity-50 mt-5"}
-                                placeholder={"Votre nom..."}
-                            />
-                            <input
-                                type={"text"}
-                                className={"w-full bg-transparent border-2 rounded-xl px-3 py-1 text-white placeholder:text-white placeholder:text-opacity-50 mt-5"}
-                                placeholder={"Votre prénom..."}
-                            />
-                        </div>
-                        <div className={"md:flex md:justify-between md:items-center"}>
-                            <input
-                                type={"email"}
-                                className={"w-full bg-transparent border-2 rounded-xl px-3 py-1 text-white placeholder:text-white placeholder:text-opacity-50 mt-5"}
-                                placeholder={"Votre email..."}
-                            />
-                        </div>
-                        <div className={"md:flex md:justify-between md:items-center"}>
-                            <textarea
-                                className={"w-full bg-transparent border-2 rounded-xl px-3 py-1 text-white placeholder:text-white placeholder:text-opacity-50 mt-5"}
-                                rows={10}
-                                placeholder={"Votre message..."}
-                            ></textarea>
-                        </div>
-                        <button className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>Envoyer</button>
-                    </form>
+                    <Contact />
                 </div>
             </section>
             <section id={"copyright"} className={"text-white font-bold text-center py-3"}>
