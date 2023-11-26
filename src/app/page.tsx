@@ -17,7 +17,7 @@ export default function Home() {
                     <h4 className={"text-title text-3xl mb-5 " + montserrat.className}>Développeur web</h4>
                     <p className={"text-white"}>Je design et développe des sites webs<br />
                     N&apos;hésitez pas à jeter un coup d&apos;oeil à mes créations !</p>
-                    <button className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</button>
+                    <a href={"#projects"} className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</a>
                 </div>
             </section>
             <section id={"about-me"} className={"p-5 pt-16 pb-16"}>
@@ -30,10 +30,12 @@ export default function Home() {
                     <div className={"text-center md:text-left md:border-l-4 md:border-primary p-3"}>
                         <h4 className={"text-title mb-3 text-2xl font-bold " + montserrat.className}>Qui suis-je ?</h4>
                         <hr className={"md:hidden bg-primary h-1 rounded mb-3"} />
-                        <p className={"text-white"}>En cours de BUT Informatique à l’IUT de Laval, je me passionne pour le développement informatique et notamment le web.
-                            J’aime apprendre de nouvelles choses et les mettre en œuvre à travers des petits projets
-                            que je réalise sur mon temps universitaire et personnel.
-                            Si vous avez une idée que vous souhaitez concrétiser, je serai ravi d’échanger avec vous !</p>
+                        <p className={"text-white"}>
+                            En cours de cursus en Informatique à l&apos;IUT de Laval,
+                            je me passionne pour le développement informatique, notamment dans le domaine du web.
+                            J&apos;aime acquérir de nouvelles compétences et les mettre en pratique à travers des projets personnels
+                            que je mène pendant mes études et en dehors. Si vous avez une idée que vous souhaitez concrétiser,
+                            je serai ravi d&apos;échanger avec vous !</p>
                     </div>
                 </div>
             </section>
@@ -58,8 +60,8 @@ export default function Home() {
                         <h6 className={"text-title font-bold text-lg"}>Lycée Bertrand D&apos;argentré, Vitré 35500, filière générale<br />
                             2019 - 2021</h6>
                         <ul className={"text-white list-disc ps-5"}>
-                            <li>Mathématique</li>
-                            <li>Informatique</li>
+                            <li>Spécialité : Mathématique</li>
+                            <li>Spécialité : Informatique</li>
                         </ul>
                         <br />
                         <h6 className={"text-title font-bold text-lg"}>IUT De Laval, LAVAL 53000, département informatique<br />
@@ -79,8 +81,8 @@ export default function Home() {
                 <div className={"bg-block rounded-xl shadow-lg p-4"}>
                     <h4 className={"text-title font-bold text-2xl " + montserrat.className}>Mes projets</h4>
                     <p className={"text-white mb-3"}>
-                        Les projets suivants mon permis de développer les compétences présentées plus haut.
-                        N’hésitez pas à me faire un retour si vous avez des conseils ou des suggestions, toute améliorations et bonne à prendre !
+                        Les projets suivants m&apos;ont permis de développer les compétences présentées plus haut.
+                        N&apos;hésitez pas à me faire part de vos conseils ou suggestions, toute amélioration est bonne à prendre!
                     </p>
                     <div className={"flex flex-wrap gap-3"}>
                         <div className={"card w-72 bg-background rounded-xl h-max mt-3 border-background border-2"}>
@@ -89,9 +91,8 @@ export default function Home() {
                             </div>
                             <div className={"project-body text-center py-5 px-2"}>
                                 <h6 className={"text-lg text-title font-bold mb-3"}>FetcherREP</h6>
-                                <p className={"text-white mb-3"}>Fetcher est une plateforme pour récupérer, enregistrer et afficher les rapports provenant de la plateforme Hackerone.
-                                    Ce projet a été développé avec Bootstrap, Next.js et Prisma </p>
-                                <a href={"https://github.com/lucasmartinelle/fetcherRep"} className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</a>
+                                <p className={"text-white mb-3"}>FetcherREP est une plateforme conçue pour récupérer, enregistrer et afficher les rapports issus de la plateforme Hackerone. Ce projet a été développé en utilisant Bootstrap, Next.js et Prisma.</p>
+                                <a href={"https://github.com/lucasmartinelle/fetcherRep"} target={"_BLANK"} className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</a>
                             </div>
                         </div>
                         <div className={"card w-72 bg-background rounded-xl h-max mt-3 border-background border-2"}>
@@ -100,8 +101,8 @@ export default function Home() {
                             </div>
                             <div className={"project-body text-center py-5 px-2"}>
                                 <h6 className={"text-lg text-title font-bold mb-3"}>Portfolio</h6>
-                                <p className={"text-white mb-3"}>Vous êtes actuellement dessus ! Projet développé à l’aide de TailWind CSS et Next.js</p>
-                                <a href={"https://github.com/lucasmartinelle/Portfolio"} className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</a>
+                                <p className={"text-white mb-3"}>Vous êtes actuellement dessus ! Ce projet a été développé à l&apos;aide de TailWind CSS et Next.js</p>
+                                <a href={"https://github.com/lucasmartinelle/Portfolio"} target={"_BLANK"} className={"bg-primary p-3 py-1 rounded-md max-w-fit mt-5"}>En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +112,7 @@ export default function Home() {
                 <div className={"bg-background rounded-xl shadow-lg p-4 max-w-xl"}>
                     <h4 className={"text-title font-bold text-2xl " + montserrat.className}>Me contacter</h4>
                     <p className={"text-white mb-3"}>
-                        Vous souhaitez m’envoyer un message, me faire une suggestion ou m’alerter d’un problème, vous pouvez le faire ci-dessous !
+                        Vous souhaitez m&apos;envoyer un message, me faire une suggestion ou m&apos;alerter d’un problème ? N&apos;hésitez pas à le faire ci-dessous !
                     </p>
                     <Contact />
                 </div>
