@@ -6,7 +6,7 @@ const karla = Karla({subsets: ['latin']});
 
 export const metadata: Metadata = {
   title: 'Lucas MARTINELLE - Portfolio',
-  description: 'Bienvenu sur mon portfolio ! Vous y apprendrez plus sur moi, mon parcours et mes motivations...',
+  description: 'Bienvenu sur mon portfolio ! Vous y apprendrez plus sur moi, mon parcours et mes motivations...'
 }
 
 export default function RootLayout({

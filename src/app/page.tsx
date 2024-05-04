@@ -8,10 +8,12 @@ export default function Home() {
     return (
         <main>
             <section id={"hero"} className={"flex justify-center items-center w-100 p-24 bg-block"}>
-                <img
-                    className={"max-h-72 md:max-h-96 hidden sm:block"}
+                <Image
+                    className={"max-h-72 md:max-h-96 hidden sm:block w-fit"}
                     src={"/stroke.svg"}
-                    alt={"SVG"} />
+                    alt={"SVG"}
+                    width={"1024"}
+                    height={"1024"} />
                 <div className={"text-center flex flex-col items-center justify-center"}>
                     <h1 className={"text-title font-bold text-5xl " + montserrat.className}>Lucas MARTINELLE</h1>
                     <h4 className={"text-title text-3xl mb-6 " + montserrat.className}>Développeur web et mobile</h4>
@@ -24,10 +26,12 @@ export default function Home() {
             </section>
             <section id={"about-me"} className={"p-5 pt-16 pb-16"}>
                 <div className={"sm:w-2/3 xl:w-2/4 lg:w-3/4 m-auto md:flex md:items-center md:gap-3 rounded-xl drop-shadow-lg p-8 bg-block"}>
-                    <img
+                    <Image
                         src={"/me.jpg"}
                         alt={"Photo de moi"}
                         className={"m-auto rounded-full h-36 w-44 object-cover md:h-48 md:w-36 lg:h-52 lg:w-44 drop-shadow-lg"}
+                        width={"1024"}
+                        height={"1024"}
                     />
                     <div className={"text-center md:text-left p-3"}>
                         <h4 className={"text-title mb-3 text-2xl font-bold " + montserrat.className}>Qui suis-je ?</h4>
@@ -54,7 +58,7 @@ export default function Home() {
                                 className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 p-1 bg-white"
                             >&nbsp;</span>
                             <h3 className="flex items-center mb-1 text-lg font-semibold text-title">
-                                DIETAGRO - Développement, Optimisation et Modernisation de l'ERP
+                                DIETAGRO - Développement, Optimisation et Modernisation de l&apos;ERP
                             </h3>
                             <time
                                 className="block mb-2 text-sm font-normal leading-none text-title">
@@ -105,7 +109,7 @@ export default function Home() {
                                 className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 p-1 bg-white"
                             >&nbsp;</span>
                             <h3 className="flex items-center mb-1 text-lg font-semibold text-title">
-                                Lycée Bertrand D'argentré
+                                Lycée Bertrand D&apos;Argentré
                             </h3>
                             <time
                                 className="block mb-2 text-sm font-normal leading-none text-title">
@@ -130,7 +134,7 @@ export default function Home() {
                     <div className={"flex flex-wrap justify-around items-start gap-8"}>
                         <div className={"card w-72 bg-background rounded-xl h-max mt-3 border-background border-2"}>
                             <div className={"project-banner"}>
-                                <img src={"/bountyDashboard.png"} alt={"Bounty Dashboard"} className={"object-contain rounded-t-xl"} />
+                                <Image src={"/bountyDashboard.png"} alt={"Bounty Dashboard"} className={"object-contain rounded-t-xl"} width={"1024"} height={"1024"} />
                             </div>
                             <div className={"project-body text-center py-5 px-2"}>
                                 <h6 className={"text-lg text-title font-bold mb-3"}>BountyDashboard - 2021</h6>
@@ -140,7 +144,7 @@ export default function Home() {
                         </div>
                         <div className={"card w-72 bg-background rounded-xl h-max mt-3 border-background border-2"}>
                             <div className={"project-banner"}>
-                                <img src={"/univAgenda.jpg"} alt={"Univ Agenda"} className={"object-contain rounded-t-xl"} />
+                                <Image src={"/univAgenda.jpg"} alt={"Univ Agenda"} className={"object-contain rounded-t-xl"} width={"1024"} height={"1024"} />
                             </div>
                             <div className={"project-body text-center py-5 px-2"}>
                                 <h6 className={"text-lg text-title font-bold mb-3"}>UnivAgenda - 2022</h6>
@@ -150,7 +154,7 @@ export default function Home() {
                         </div>
                         <div className={"card w-72 bg-background rounded-xl h-max mt-3 border-background border-2"}>
                             <div className={"project-banner rounded-xl"}>
-                                <img src={"/fetcherREP.png"} alt={"Fetcher REP"} className={"object-contain rounded-t-xl"} />
+                                <Image src={"/fetcherREP.png"} alt={"Fetcher REP"} className={"object-contain rounded-t-xl"} width={"1024"} height={"1024"} />
                             </div>
                             <div className={"project-body text-center py-5 px-2"}>
                                 <h6 className={"text-lg text-title font-bold mb-3"}>FetcherREP - 2023</h6>
@@ -160,7 +164,7 @@ export default function Home() {
                         </div>
                         <div className={"card w-72 bg-background rounded-xl h-max mt-3 border-background border-2"}>
                             <div className={"project-banner"}>
-                                <img src={"/portfolio.png"} alt={"Fetcher REP"} className={"object-contain rounded-t-xl"} />
+                                <Image src={"/portfolio.png"} alt={"Fetcher REP"} className={"object-contain rounded-t-xl"} width={"1024"} height={"1024"} />
                             </div>
                             <div className={"project-body text-center py-5 px-2"}>
                                 <h6 className={"text-lg text-title font-bold mb-3"}>Portfolio - 2024</h6>
@@ -170,7 +174,7 @@ export default function Home() {
                         </div>
                         <div className={"card w-72 bg-background rounded-xl h-max mt-3 border-background border-2"}>
                             <div className={"project-banner"}>
-                                <img src={"/roseliabijoux.png"} alt={"Rosélia Bijoux"} className={"object-contain rounded-t-xl"} />
+                                <Image src={"/roseliabijoux.png"} alt={"Rosélia Bijoux"} className={"object-contain rounded-t-xl"} width={"1024"} height={"1024"} />
                             </div>
                             <div className={"project-body text-center py-5 px-2"}>
                                 <h6 className={"text-lg text-title font-bold mb-3"}>Rosélia Bijoux - 2024</h6>
