@@ -21,30 +21,61 @@ const Contact: FC = () => {
 	return (
 		<form className={"text-center"} onSubmit={handleSubmit(onSubmit)}>
 			<div className={"md:flex md:justify-between md:items-center md:gap-3"}>
-				<input
-					type={"text"}
-					className={"w-full bg-transparent border-2 rounded-xl px-3 py-1 text-white placeholder:text-white placeholder:text-opacity-50 mt-5"}
-					placeholder={"Votre nom..."}
-					{...register('first_name', { required: true })}
-				/>
-				<input
-					type={"text"}
-					className={"w-full bg-transparent border-2 rounded-xl px-3 py-1 text-white placeholder:text-white placeholder:text-opacity-50 mt-5"}
-					placeholder={"Votre prénom..."}
-					{...register('last_name', { required: true })}
-				/>
+				<div className="flex mt-5">
+					<span
+						className="inline-flex items-center px-3 text-sm text-gray-900 bg-primary border rounded-e-0 border-primary border-e-0 rounded-s-md"
+					>
+						<span className="material-symbols-outlined">
+							account_circle
+						</span>
+					</span>
+					<input
+						type={"text"}
+						className="rounded-none rounded-e-lg bg-transparent border block flex-1 min-w-0
+						w-full text-sm border-gray-300 p-2.5 focus-visible:outline-none focus:border-primary text-white"
+						placeholder={"Votre nom"}
+						{...register('last_name', { required: true })}
+					/>
+				</div>
+				<div className="flex mt-5">
+					<span
+						className="inline-flex items-center px-3 text-sm text-gray-900 bg-primary border rounded-e-0 border-primary border-e-0 rounded-s-md"
+					>
+						<span className="material-symbols-outlined">
+							account_circle
+						</span>
+					</span>
+					<input
+						type={"text"}
+						className="rounded-none rounded-e-lg bg-transparent border block flex-1 min-w-0
+						w-full text-sm border-gray-300 p-2.5 focus-visible:outline-none focus:border-primary text-white"
+						placeholder={"Votre prénom"}
+						{...register('first_name', { required: true })}
+					/>
+				</div>
 			</div>
-			<div className={"md:flex md:justify-between md:items-center"}>
+
+			<div className="flex mt-5">
+					<span
+						className="inline-flex items-center px-3 text-sm text-gray-900 bg-primary border rounded-e-0 border-primary border-e-0 rounded-s-md"
+					>
+						<span className="material-symbols-outlined">
+							mail
+						</span>
+					</span>
 				<input
-					type={"email"}
-					className={"w-full bg-transparent border-2 rounded-xl px-3 py-1 text-white placeholder:text-white placeholder:text-opacity-50 mt-5"}
-					placeholder={"Votre email..."}
+					type={"text"}
+					className="rounded-none rounded-e-lg bg-transparent border block flex-1 min-w-0
+						w-full text-sm border-gray-300 p-2.5 focus-visible:outline-none focus:border-primary text-white"
+					placeholder={"Votre email"}
 					{...register('email', { required: true })}
 				/>
 			</div>
-			<div className={"md:flex md:justify-between md:items-center"}>
+
+			<div className={"md:flex md:justify-between md:items-center mt-5"}>
 				<textarea
-					className={"w-full bg-transparent border-2 rounded-xl px-3 py-1 text-white placeholder:text-white placeholder:text-opacity-50 mt-5"}
+					className="rounded-none rounded-e-lg bg-transparent border block flex-1 min-w-0
+						w-full text-sm border-gray-300 p-2.5 focus-visible:outline-none focus:border-primary text-white"
 					rows={10}
 					placeholder={"Votre message..."}
 					{...register('message', { required: true })}
